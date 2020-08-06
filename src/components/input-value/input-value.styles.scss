@@ -1,0 +1,25 @@
+.input-value {
+    padding: .25rem .5rem;
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 5px;
+    margin: 0 5px;
+    margin-bottom: 4px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        &:first-child {
+            margin-left: 5px;
+        }
+    
+        &:last-child {
+            margin-right: 5px;
+        }
+    }
+}

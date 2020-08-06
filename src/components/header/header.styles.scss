@@ -1,0 +1,18 @@
+.header {
+    padding: .5rem 2rem;
+    box-shadow: -1px 9px 11px -8px rgba(0,0,0,0.45);;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .header-container {
+        width: 60%;
+        margin-left: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        .header-container {
+            width: 100%;
+        }
+    }
+}

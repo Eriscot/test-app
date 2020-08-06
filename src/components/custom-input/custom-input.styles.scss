@@ -1,0 +1,52 @@
+.input-wrapper {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.377);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & > div {
+        padding: .5rem;
+    }
+
+    .selected-values {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+
+        
+    }
+
+    .input-field {
+        width: 100%;
+
+        input {
+            border: none;
+            width: 100%;
+
+            &:active {
+                border: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        & {
+            flex-direction: column;
+            
+            .selected-values {
+                max-width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .input-field {
+                display: flex;
+            }
+        }
+    }
+}

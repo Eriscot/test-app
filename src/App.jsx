@@ -1,11 +1,17 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from './components/header/header.component';
+import Filter from './components/filter/filter.component';
 
-const App = () => {
-	return (
+const App = () => (
+	<>
 		<Header />
-  	);
-}
+		<main>
+			<aside>
+				<Filter />
+			</aside>
+		</main>
+	</>
+)
 
 export default App;

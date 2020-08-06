@@ -1,0 +1,18 @@
+form {
+    padding: 2rem 1rem;
+
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+
+        label {
+            text-transform: uppercase;
+        }
+
+        span {
+            color: rgb(0, 110, 255);
+            font-weight: 600;
+        }
+    }
+}
