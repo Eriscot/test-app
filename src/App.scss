@@ -1,7 +1,29 @@
 main {
 	display: flex;
+	height: 100%;
 
 	aside {
-		width: 30%;
+		height: 800px;
+		overflow-y: auto;
+
+		&.open {
+			animation: filterBlockIn 4s ease-in;
+
+			@keyframes filterBlockIn {
+				from {
+					width: 0;
+				}
+	
+				to {
+					width: 30%;
+				}
+			}
+		}
+		
+		@media screen and (max-width: 767px) {
+			& {
+				width: 100%;
+			}
+		}
 	}
 }

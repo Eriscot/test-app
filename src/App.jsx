@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.scss';
 import Header from './components/header/header.component';
-import Filter from './components/filter/filter.component';
+import FilterWrapper from './components/filter-wrapper/filter-wrapper.component';
 
 const App = () => (
 	<>
 		<Header />
 		<main>
-			<aside>
-				<Filter />
-			</aside>
+			<FilterWrapper />
 		</main>
 	</>
-)
+);
 
 export default App;
